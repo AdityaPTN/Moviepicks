@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.watchlist_app">
+    package="com.watchlist.app">
    <application
         android:label="watchlist_app"
         android:name="${applicationName}"
