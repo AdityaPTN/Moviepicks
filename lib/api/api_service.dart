@@ -5,22 +5,6 @@ import 'package:http/http.dart' as http;
 import 'package:watchlist_app/models/review.dart';
 
 class ApiService {
-  static Future<List<Movie>?> getTopRatedMovies() async {
-    List<Movie> movies = [];
-    try {
-      http.Response response = await http.get(Uri.parse(
-          '${Api.baseUrl}movie/top_rated?api_key=${Api.apiKey}&language=en-US&page=1'));
-      var res = jsonDecode(response.body);
-      res['results'].take(9).forEach(
-            (m) => movies.add(
-              Movie.fromMap(m),
-            ),
-          );
-      return movies;
-    } catch (e) {
-      return null;
-    }
-  }
 
   static Future<List<Movie>?> getCustomMovies(String url) async {
     List<Movie> movies = [];
@@ -28,7 +12,7 @@ class ApiService {
       http.Response response =
           await http.get(Uri.parse('${Api.baseUrl}movie/$url'));
       var res = jsonDecode(response.body);
-      res['results'].take(9).forEach(
+      res['results'].forEach(
             (m) => movies.add(
               Movie.fromMap(m),
             ),

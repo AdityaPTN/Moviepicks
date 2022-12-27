@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                         Tab(text: 'Popular'),
                       ]),
                   SizedBox(
-                    height: 600,
+                    height: 920,
                     child: TabBarView(children: [
                       TabBuilder(
                         future: ApiService.getCustomMovies(
@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       TabBuilder(
                         future: ApiService.getCustomMovies(
-                            'upcoming?api_key=${Api.apiKey}&language=en-US&page=1'),
+                            'upcoming?api_key=${Api.apiKey}&language=en-US&page=2'),
                       ),
                       TabBuilder(
                         future: ApiService.getCustomMovies(

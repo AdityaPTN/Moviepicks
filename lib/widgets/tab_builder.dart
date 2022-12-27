@@ -27,7 +27,7 @@ class TabBuilder extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.6,
               ),
-              itemCount: 6,
+              itemCount: 12,
               itemBuilder: (context, index) => GestureDetector(
                 onTap: () {
                   Get.to(DetailsScreen(movie: snapshot.data![index]));

@@ -195,7 +195,7 @@ class DetailsScreen extends StatelessWidget {
                             width: 5,
                           ),
                           Text(
-                            movie.releaseDate.split('-')[0],
+                            movie.releaseDate,
                             style: const TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 16,

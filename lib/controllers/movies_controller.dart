@@ -9,7 +9,6 @@ class MoviesController extends GetxController {
   @override
   void onInit() async {
     isLoading.value = true;
-    mainTopRatedMovies.value = (await ApiService.getTopRatedMovies())!;
     isLoading.value = false;
     super.onInit();
   }
