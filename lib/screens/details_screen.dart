@@ -47,7 +47,7 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ),
                     Tooltip(
-                      message: 'Save this movie to your watch list',
+                      message: 'Save to Watchlist',
                       triggerMode: TooltipTriggerMode.tap,
                       child: IconButton(
                         onPressed: () {
@@ -94,7 +94,7 @@ class DetailsScreen extends StatelessWidget {
                           return FadeShimmer(
                             width: Get.width,
                             height: 250,
-                            highlightColor: const Color(0xff22272f),
+                            highlightColor: const Color(0xfff44336),
                             baseColor: const Color(0xff20252d),
                           );
                         },
@@ -233,12 +233,12 @@ class DetailsScreen extends StatelessWidget {
                           indicatorWeight: 4,
                           indicatorSize: TabBarIndicatorSize.label,
                           indicatorColor: Color(
-                            0xFF3A3F47,
+                            0xFFF44336,
                           ),
                           tabs: [
                             Tab(text: 'About Movie'),
-                            Tab(text: 'Reviews'),
-                            Tab(text: 'Cast'),
+                            Tab(text: 'Movie Reviews'),
+                            Tab(text: 'Movie Cast'),
                           ]),
                       SizedBox(
                         height: 400,

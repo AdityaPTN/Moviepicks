@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             const Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                "Let's Watch All Movies",
+                "Let's Watch Movies",
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 24,
@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                   const TabBar(
                       indicatorWeight: 4,
                       indicatorColor: Color(
-                        0xFF3A3F47,
+                        0xFFF44336,
                       ),
                       tabs: [
                         Tab(text: 'Now playing'),
